@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.Queue;
 import java.util.LinkedList;
 
-public class Aoj1166 {
+public class AOJ1166 {
 	static int[][] field;
 	static String[] wall;
 	static int[] dx = {1, 0, -1, 0};

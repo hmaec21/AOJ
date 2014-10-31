@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Collections;
 
-public class Aoj1149 {
+public class AOJ1149 {
     public static void main(String[] args) {
 	Scanner sc = new Scanner(System.in);
 	while (true) {

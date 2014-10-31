@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Collections;
 
-public class Aoj1186 {
+public class AOJ1186 {
     static final int MAX_LENGTH = 150; // 幅と高さの上限
 
     public static void main(String[] args) {

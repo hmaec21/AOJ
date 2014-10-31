@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Aoj1195 {
+public class AOJ1195 {
 	static int ans;
 	static String s;
 	static ArrayList<String> sArray;
