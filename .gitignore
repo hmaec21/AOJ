@@ -1,0 +1,4 @@
+# .c .cpp .javaのみ許可
+!*.c
+!*.cpp
+!*.java
