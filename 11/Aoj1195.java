@@ -4,9 +4,11 @@ public class AOJ1195 {
 	static int ans;
 	static String s;
 	static ArrayList<String> sArray;
+    //static int count;
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		while (true) {
+		    //count = 0;
 			s = sc.next();
 			if (s.equals("#")) {
 				break;
@@ -15,16 +17,18 @@ public class AOJ1195 {
 			char[] sca = s.toCharArray();
 			//System.out.println(new String(sca));
 			ans = 0;
-			decode(sca, 0);
+			decode(sca, 0, 0);
 			//encode();
 			System.out.println(ans);
 			for (int i = 0; i < sArray.size(); i++) {
 				System.out.println(sArray.get(i));
 			}
+		    //System.out.println(count);
 		}
 	}
 	
-	public static void decode(char[] sca, int pos) {
+	public static void decode(char[] sca, int pos, int decodeBit) {
+	    //count++;
 		//System.out.println(new String(sca) + " " + sca[0] + " " + pos + " " + sca.length);
 		if (pos == sca.length) {
 			if (encode(sca)) {
@@ -37,11 +41,11 @@ public class AOJ1195 {
 			}
 			return;
 		}
-		decode(sca, pos + 1);
-		if (sca[pos] != 'z') {
+		decode(sca, pos + 1, decodeBit);
+		if (sca[pos] != 'z' && (decodeBit & (1 << (sca[pos] - 'a'))) == 0) {
 			//System.out.println(sca[pos]);
 			sca[pos]++;
-			decode(sca, pos + 1);
+			decode(sca, pos + 1, decodeBit | (1 << (sca[pos] - 1 - 'a')));
 			sca[pos]--;
 		}
 	}
