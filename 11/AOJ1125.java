@@ -1,6 +1,6 @@
+// 国内予選 2003 B Get Many Persimmon Trees
 import java.util.Scanner;
 
-// 国内予選 2003 B Get Many Persimmon Trees
 public class AOJ1125 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
