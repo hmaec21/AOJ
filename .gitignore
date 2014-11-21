@@ -2,3 +2,5 @@
 !*.c
 !*.cpp
 !*.java
+*.class
+*.exe
