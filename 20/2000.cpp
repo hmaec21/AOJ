@@ -29,38 +29,38 @@ int main() {
       cin >> direction >> distance;
       switch (direction) {
       case 'N':
-	for (int j = 0; j <= distance; j++) {
-	  field[positionY+j][positionX] = 0;
-	}
-	positionY += distance;
-	break;
+    for (int j = 0; j <= distance; j++) {
+      field[positionY+j][positionX] = 0;
+    }
+    positionY += distance;
+    break;
       case 'E':
-	for (int j = 0; j <= distance; j++) {
-	  field[positionY][positionX+j] = 0;
-	}
-	positionX += distance;
-	break;
+    for (int j = 0; j <= distance; j++) {
+      field[positionY][positionX+j] = 0;
+    }
+    positionX += distance;
+    break;
       case 'S':
-	for (int j = 0; j <= distance; j++) {
-	  field[positionY-j][positionX] = 0;
-	}
-	positionY -= distance;
-	break;
+    for (int j = 0; j <= distance; j++) {
+      field[positionY-j][positionX] = 0;
+    }
+    positionY -= distance;
+    break;
       case 'W':
-	for (int j = 0; j <= distance; j++) {
-	  field[positionY][positionX-j] = 0;
-	}
-	positionX -= distance;
-	break;
+    for (int j = 0; j <= distance; j++) {
+      field[positionY][positionX-j] = 0;
+    }
+    positionX -= distance;
+    break;
       }
     }
     
     bool ans = true;
     for (int i = 0; i < 21; i++) {
       for (int j = 0; j < 21; j++) {
-	if (field[i][j] == 1) {
-	  ans = false;
-	}
+    if (field[i][j] == 1) {
+      ans = false;
+    }
       }
     }
     if (ans) {
