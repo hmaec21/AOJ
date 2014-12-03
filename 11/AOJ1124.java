@@ -1,3 +1,4 @@
+// AOJ 1124 ICPC国内予選 2003 Problem A "When Can We Meet?"
 import java.util.Scanner;
 
 public class AOJ1124 {
