@@ -1,3 +1,4 @@
+// AOJ 1129 "Hanafuda Shuffle" (ICPC国内予選 2004 Problem A)
 import java.util.Scanner;
 import java.util.ArrayList;
 

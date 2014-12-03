@@ -1,4 +1,4 @@
-// AOJ 1027 UAPC 2009 Problem I "A Piece of Cake"
+// AOJ 1027 "A Piece of Cake" (UAPC 2009 Problem I)
 #include <cstdio>
 
 using namespace std;
