@@ -40,7 +40,7 @@ int main() {
         if (L == 0) {
             break;
         }
-
+        
         for (int i = 0; i < 21; i++) {
             a[i] = 0;
         }
