@@ -32,7 +32,7 @@ bool isValid(string s) {
 int main() {
     string s;
     cin >> s;
-
+    
     if (isValid(s)) {
         cout << "VALID" << endl;
     } else {
