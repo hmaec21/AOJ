@@ -6,13 +6,13 @@ import java.util.Collections;
 
 public class AOJ1186 {
     static final int MAX_LENGTH = 150; // 幅と高さの上限
-
+    
     public static void main(String[] args) {
         final int MAX_LENGTH = 150;
         Scanner sc = new Scanner(System.in);
-    
+        
         ArrayList<Square> squares = new ArrayList<Square>();
-    
+        
         // iは高さ、jは幅
         for (int i = 1; i <= MAX_LENGTH; i++) {
             for (int j = i + 1; j <= MAX_LENGTH; j++) {
@@ -21,21 +21,21 @@ public class AOJ1186 {
             }
         }
         Collections.sort(squares, new SquareComp());
-
-    
+        
+        
         while (true) {
             int h = sc.nextInt();
             int w = sc.nextInt();
             if (h == 0) {
                 break;
             }
-        
+            
             int diagonal = diagSquare(h, w); // 入力した長方形の対角線の長さの2乗
             Square tmp = new Square(h, w);
-        
+            
             // 方法1. 素直に総当たりする
             //all(h, w, diagonal);
-        
+            
             // 方法2. ソートして2分探索
             binary(squares, tmp);
         }
@@ -50,7 +50,7 @@ public class AOJ1186 {
         int resultH = 0;
         int resultW = 0;
         int resultD = Integer.MAX_VALUE;
-    
+        
         // iは高さ、jは幅
         for (int i = 1; i <= MAX_LENGTH; i++) {
             for (int j = i + 1; j <= MAX_LENGTH; j++) {
@@ -70,11 +70,11 @@ public class AOJ1186 {
     }
     
     public static void binary(ArrayList<Square> squares, Square tmp) {
-    
+        
         int n = Collections.binarySearch(squares, tmp, new SquareComp());
         Square ans = squares.get(n+1);
         System.out.println(ans.h + " " + ans.w);
-    
+        
         /*
           for (int i = 0; i < squares.size(); i++) {
           System.out.println(squares.get(i));
