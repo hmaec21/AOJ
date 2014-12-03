@@ -1,3 +1,4 @@
+// AOJ 1187 "ICPCの順位付け" (ICPC国内予選 2013 Problem B)
 #include <iostream>
 #include <algorithm>
 

@@ -1,3 +1,4 @@
+// AOJ 1156 "ちょろちょろロボット" (ICPC国内予選 2007 Problem D)
 #include <iostream>
 #include <algorithm>
 

@@ -1,3 +1,4 @@
+// AOJ 1155 "如何に汝を満足せしめむ？ いざ数え上げむ…" (ICPC国内予選 2008 Problem C)
 // 参考サイト: http://mayah.jp/icpc/domestic2008/
 #include <iostream>
 #include <string>

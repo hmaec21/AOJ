@@ -1,3 +1,5 @@
+// AOJ 1144 "カーリング 2.0" (ICPC国内予選 2006 Problem D)
+// 注: まだ完成していません
 #include <iostream>
 #include <cstring>
 #include <cstdio>

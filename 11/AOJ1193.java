@@ -1,3 +1,4 @@
+// AOJ 1193 "連鎖消滅パズル" (ICPC国内予選 2014 Problem B)
 import java.util.Scanner;
 
 public class AOJ1193 {

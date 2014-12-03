@@ -1,3 +1,4 @@
+// AOJ 1180 "繰り返す10進数" (ICPC国内予選 2012 Problem B)
 #include <iostream>
 #include <string>
 #include <algorithm>

@@ -1,3 +1,4 @@
+// AOJ 1148 "ログイン/ログアウト記録の解析" (ICPC国内予選 2007 Problem B)
 #include <iostream>
 #include <cstring>
 #include <algorithm>

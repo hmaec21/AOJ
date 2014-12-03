@@ -1,3 +1,4 @@
+// AOJ 1174 "同色パネル結合" (ICPC国内予選 2011 Problem C)
 #include <iostream>
 #include <cstring>
 

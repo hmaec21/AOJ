@@ -1,3 +1,4 @@
+// AOJ 1166 "迷図と命ず" (ICPC国内予選 2010 Problem B)
 import java.util.Scanner;
 import java.util.Queue;
 import java.util.LinkedList;

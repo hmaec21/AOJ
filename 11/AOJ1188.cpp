@@ -1,3 +1,4 @@
+// AOJ 1188 "階層民主主義" (ICPC国内予選 2013 Problem C)
 #include <iostream>
 #include <string>
 #include <vector>
