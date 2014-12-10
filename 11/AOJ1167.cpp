@@ -1,3 +1,4 @@
+// AOJ 1167 "ポロック予想" (ICPC国内予選 2010 Problem C)
 #include <iostream>
 #include <vector>
 #include <algorithm>

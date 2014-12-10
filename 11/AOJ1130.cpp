@@ -1,3 +1,4 @@
+// AOJ 1130 "Red and Black" (ICPC国内予選 2004 Problem B)
 #include <iostream>
 #include <cstring>
 #include <string>

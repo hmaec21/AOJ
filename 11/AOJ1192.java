@@ -1,4 +1,4 @@
-// 国内予選 2014 A 税率変更
+// AOJ 1192 "税率変更" (ICPC国内予選 2014 Problem A)
 import java.util.Scanner;
 
 public class AOJ1192 {

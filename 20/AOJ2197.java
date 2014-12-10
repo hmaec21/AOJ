@@ -1,3 +1,4 @@
+// AOJ 2197 "連続する整数の和" (ICPC模擬国内予選 2010 Problem A)
 import java.util.Scanner;
 
 public class AOJ2197 {

@@ -1,3 +1,4 @@
+// AOJ 1159 "次期町長" (ICPC国内予選 2009 Problem A)
 #include <iostream>
 
 using namespace std;

@@ -1,4 +1,4 @@
-// 模擬国内予選 2014 A 踏み台昇降
+// AOJ 2582 "踏み台昇降" (ICPC模擬国内予選 2014 Problem A)
 import java.util.Scanner;
 
 public class AOJ2582 {

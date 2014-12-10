@@ -1,4 +1,4 @@
-// 国内予選 2012 A ミレニアム
+// AOJ 1179 "ミレニアム" (ICPC国内予選 2012 Problem A)
 import java.util.Scanner;
 
 public class AOJ1179 {

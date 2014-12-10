@@ -1,3 +1,4 @@
+// AOJ 2522 "Register Phase" (UECPC 2013 Problem A)
 #include <iostream>
 #include <string>
 #include <cctype>
@@ -32,7 +33,7 @@ bool isValid(string s) {
 int main() {
     string s;
     cin >> s;
-
+    
     if (isValid(s)) {
         cout << "VALID" << endl;
     } else {

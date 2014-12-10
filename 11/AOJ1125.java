@@ -1,4 +1,4 @@
-// 国内予選 2003 B Get Many Persimmon Trees
+// AOJ 1125 "Get Many Persimmon Trees" (ICPC国内予選 2003 Problem B)
 import java.util.Scanner;
 
 public class AOJ1125 {

@@ -1,3 +1,4 @@
+// AOJ 2149 "幸運の操作者" (ICPC模擬国内予選 2009 Problem A)
 #include <iostream>
 
 using namespace std;

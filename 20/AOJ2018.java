@@ -1,3 +1,4 @@
+// AOJ 2018 "お姫様のギャンブル" (ICPC模擬国内予選 2008 Problem A)
 import java.util.Scanner;
 
 public class AOJ2018 {

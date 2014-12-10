@@ -1,3 +1,4 @@
+// AOJ 1195 "暗号化システム" (ICPC国内予選 2014 Problem D)
 import java.util.*;
 
 public class AOJ1195 {

@@ -1,3 +1,4 @@
+// AOJ 1174 "åŒè‰²ãƒ‘ãƒãƒ«çµåˆ" (ICPCå›½å†…äºˆé¸ 2011 Problem C)
 #include <iostream>
 #include <cstring>
 
@@ -41,7 +42,7 @@ void dfs(int x, int y, int n, int m) {
     }
 }
 
-// ¶ã‚Æ‚Â‚È‚ª‚Á‚Ä‚¢‚éƒ}ƒX‚ğ‚·‚×‚ÄFn‚É•Ï‚¦‚é, m‚Í‰ñ”(1`5)
+// å·¦ä¸Šã¨ã¤ãªãŒã£ã¦ã„ã‚‹ãƒã‚¹ã‚’ã™ã¹ã¦è‰²nã«å¤‰ãˆã‚‹, mã¯å›æ•°(1-5)
 void change(int n, int m) {
     memcpy(field[m], field[m-1], sizeof(field[m-1]));
     old = field[m][0][0];
@@ -109,7 +110,7 @@ int main() {
                 cin >> field[0][i][j];
             }
         }
-        //cout << "‰Šúó‘Ô" << endl;
+        //cout << "åˆæœŸçŠ¶æ…‹" << endl;
         //debug(0);
         solve();
     }

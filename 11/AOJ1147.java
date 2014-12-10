@@ -1,4 +1,4 @@
-// AOJ 1147 ICPC国内予選 2007 Problem A "ICPC 得点集計ソフトウェア"
+// AOJ 1147 "ICPC 得点集計ソフトウェア" (ICPC国内予選 2007 Problem A)
 import java.util.Scanner;
 
 public class AOJ1147 {

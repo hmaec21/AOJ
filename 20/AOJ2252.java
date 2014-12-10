@@ -1,3 +1,4 @@
+// AOJ 2252 "koukyoukoukokukikou" (ICPC模擬国内予選 2011 Problem A)
 import java.util.Scanner;
 import java.util.Arrays;
 
