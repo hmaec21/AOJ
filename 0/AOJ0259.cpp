@@ -1,3 +1,4 @@
+// AOJ 0259 "すべての数は６１７４に通ず" (パソコン甲子園 2012 予選 問題 4)
 #include <iostream>
 #include <string>
 #include <algorithm>

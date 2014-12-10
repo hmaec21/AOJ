@@ -1,3 +1,4 @@
+// AOJ 0075 "BMI" (パソコン甲子園 2005 予選 問題 03)
 #include <cstdio>
 
 using namespace std;
