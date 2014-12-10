@@ -1,3 +1,4 @@
+// AOJ 2012 "宇宙ヤシガニ" (ICPC模擬国内予選 2007 Problem A)
 #include <iostream>
 #include <algorithm>
 

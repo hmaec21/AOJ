@@ -1,3 +1,4 @@
+// AOJ 2000 "Misterious Gems" (ICPC模擬国内予選 2006 Problem A)
 #include <iostream>
 #include <cstring>
 

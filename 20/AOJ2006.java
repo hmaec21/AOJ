@@ -1,3 +1,4 @@
+// AOJ 2006 "Keitai Message" (ICPC模擬国内予選 2005 Problem A)
 import java.util.Scanner;
 
 public class AOJ2006 {

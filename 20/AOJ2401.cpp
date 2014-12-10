@@ -1,3 +1,4 @@
+// AOJ 2401 "恒等式" (ICPC模擬国内予選 2012 Problem C)
 #include <iostream>
 #include <string>
 #include <algorithm>

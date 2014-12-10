@@ -1,3 +1,4 @@
+// AOJ 2399 "君のプライバシーを守れ!" (ICPC模擬国内予選 2012 Problem A)
 #include <iostream>
 #include <vector>
 #include <algorithm>

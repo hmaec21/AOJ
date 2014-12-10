@@ -1,3 +1,4 @@
+// AOJ 2440 "Kagisys" (JAG夏合宿 2012 day 3B Problem A)
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections;

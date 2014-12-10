@@ -1,3 +1,4 @@
+// AOJ 2522 "Register Phase" (UECPC 2013 Problem A)
 #include <iostream>
 #include <string>
 #include <cctype>
