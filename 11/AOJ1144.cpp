@@ -1,8 +1,8 @@
 // AOJ 1144 "カーリング 2.0" (ICPC国内予選 2006 Problem D)
-// 注: まだ完成していません
 #include <iostream>
 #include <cstring>
 #include <cstdio>
+#include <algorithm>
 
 using namespace std;
 
@@ -16,8 +16,7 @@ int field[MAX_H+2][MAX_W+2];
 
 int sx, sy;
 int gx, gy;
-int posx, posy;
-int count;
+int turn;
 
 int dx[] = {1, 0, -1, 0};
 int dy[] = {0, 1, 0, -1};
@@ -35,16 +34,43 @@ void debug() {
     return;
 }
 
-int dfs(int c) {
+void dfs(int c, int x, int y) {
     if (c > LIMITS) {
-        return -1;
+        return;
+    }
+    //printf("%d\n", c);
+    for (int i = 0; i < 4; i++) {
+        if (field[y+dy[i]][x+dx[i]] == 1) {
+            continue;
+        }
+        int tmpx = x;
+        int tmpy = y;
+        while (field[tmpy+dy[i]][tmpx+dx[i]] != 1 && field[tmpy][tmpx] != -1) {
+            tmpx += dx[i];
+            tmpy += dy[i];
+            if (tmpx == gx && tmpy == gy) {
+                turn = min(turn, c);
+                return;
+            }
+            if (field[tmpy][tmpx] == -1) {
+                break;
+            }
+        }
+        if (field[tmpy][tmpx] != -1) {
+            field[tmpy+dy[i]][tmpx+dx[i]] = 0;
+            dfs(c + 1, tmpx, tmpy);
+            field[tmpy+dy[i]][tmpx+dx[i]] = 1;
+        }
     }
 }
 
 void solve() {
-    posx = sx;
-    posy = sy;
-    count = 0;
+    dfs(1, sx, sy);
+    if (turn != 99) {
+        printf("%d\n", turn);
+    } else {
+        printf("-1\n");
+    }
 }
 
 int main() {
@@ -69,6 +95,7 @@ int main() {
             }
         }
         //debug();
+        turn = 99;
         solve();
     }
     
