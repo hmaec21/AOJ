@@ -43,6 +43,6 @@ int main() {
         ysize = ymax - ymin + 1;
         cout << xsize << " " << ysize << endl;
     }
-
+    
     return 0;
 }
