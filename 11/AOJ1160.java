@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class AOJ1160 {
     static int[][] field;
     static int ans;
+    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
