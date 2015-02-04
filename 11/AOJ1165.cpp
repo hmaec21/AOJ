@@ -14,8 +14,14 @@ int main() {
         if (N == 0) {
             break;
         }
+        
         p.first = p.second = 0;
         s.push_back(p);
+        int xsize, ysize;
+        int xmax = 0;
+        int xmin = 0;
+        int ymax = 0;
+        int ymin = 0;
         for (int i = 1; i < N; i++) {
             int dx[] = {-1, 0, 1, 0};
             int dy[] = {0, -1, 0, 1};
@@ -26,18 +32,11 @@ int main() {
             p.first = x;
             p.second = y;
             s.push_back(p);
-        }
-        int xsize, ysize;
-        int xmax = INT_MIN;
-        int xmin = INT_MAX;
-        int ymax = INT_MIN;
-        int ymin = INT_MAX;
-        for (int i = 0; i < N; i++) {
-            //cout << s[i].first << " " << s[i].second << endl;
-            xmax = max(xmax, s[i].first);
-            xmin = min(xmin, s[i].first);
-            ymax = max(ymax, s[i].second);
-            ymin = min(ymin, s[i].second);
+            
+            xmax = max(xmax, x);
+            xmin = min(xmin, x);
+            ymax = max(ymax, y);
+            ymin = min(ymin, y);
         }
         xsize = xmax - xmin + 1;
         ysize = ymax - ymin + 1;
