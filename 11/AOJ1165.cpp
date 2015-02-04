@@ -1,7 +1,6 @@
 // AOJ 1165 "角角画伯，かく悩みき" (ICPC国内予選 2010 Problem A)
 #include <iostream>
 #include <vector>
-#include <climits>
 
 using namespace std;
 
