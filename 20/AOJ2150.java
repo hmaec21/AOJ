@@ -45,7 +45,7 @@ public class AOJ2150 {
     public static void sieve() {
         isNotPrime.set(0);
         isNotPrime.set(1);
-        for (int i = 2; i < MAX_N; i++) {
+        for (int i = 2; i <= MAX_N; i++) {
             if (!isNotPrime.get(i)) {
                 primeList.add(i);
                 for (int j = i * 2; j <= MAX_N * 2; j += i) {
