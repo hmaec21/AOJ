@@ -1,4 +1,4 @@
-// AOJ 1276 "Prime Gap" (ICPCアジア地区予選 東京大会 2007 Problem B)
+// AOJ 1276 "Prime Gap" (ICPCアジア地区予選 2007 東京大会 Problem B)
 import java.util.Scanner;
 import java.util.BitSet;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-// AOJ 1240 "Unreliable Messengers" (ICPCアジア地区予選 会津大会 2003 Problem A)
+// AOJ 1240 "Unreliable Messengers" (ICPCアジア地区予選 2003 会津大会 Problem A)
 import java.util.Scanner;
 
 public class AOJ1240 {
