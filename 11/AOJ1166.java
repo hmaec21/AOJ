@@ -64,22 +64,10 @@ public class AOJ1166 {
     
     // 隣接する2マスに壁があればtrue，そうでなければfalseを返すメソッド
     public static boolean isWall(int x1, int y1, int x2, int y2) {
-        if (y1 == y2) {
-            // 横2マスの場合
-            //System.out.println("'" + wall[2*y1].charAt(x1 + x2) + "'");
-            if (wall[2*y1].charAt(x1 + x2) == '1') {
-                return true;
-            } else {
-                return false;
-            }
+        if (wall[y1+y2].charAt(x1 + x2) == '1') {
+            return true;
         } else {
-            // 縦2マスの場合
-            //System.out.println("'" + wall[y1+y2].charAt(2 * x1) + "'");
-            if (wall[y1+y2].charAt(2 * x1) == '1') {
-                return true;
-            } else {
-                return false;
-            }
+            return false;
         }
     }
 }
