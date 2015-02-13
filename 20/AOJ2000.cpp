@@ -11,6 +11,8 @@ int main() {
         int M; // 命令の個数
         int positionX = 10; // ロボットの位置のx座標
         int positionY = 10; // ロボットの位置のy座標
+        int dx[] = {0, 1, 0, -1};
+        int dy[] = {1, 0, -1, 0};
         memset(field, 0, sizeof(field));
         
         cin >> N;
@@ -26,33 +28,27 @@ int main() {
         cin >> M;
         for (int i = 0; i < M; i++) {
             char direction;
+            int dir;
             int distance;
             cin >> direction >> distance;
             switch (direction) {
             case 'N':
-                for (int j = 0; j <= distance; j++) {
-                    field[positionY+j][positionX] = 0;
-                }
-                positionY += distance;
+                dir = 0;
                 break;
             case 'E':
-                 for (int j = 0; j <= distance; j++) {
-                     field[positionY][positionX+j] = 0;
-                 }
-                 positionX += distance;
-                 break;
+                dir = 1;
+                break;
             case 'S':
-                for (int j = 0; j <= distance; j++) {
-                    field[positionY-j][positionX] = 0;
-                }
-                positionY -= distance;
+                dir = 2;
                 break;
             case 'W':
-                for (int j = 0; j <= distance; j++) {
-                    field[positionY][positionX-j] = 0;
-                }
-                positionX -= distance;
+                dir = 3;
                 break;
+            }
+            for (int j = 0; j < distance; j++) {
+                positionX += dx[dir];
+                positionY += dy[dir];
+                field[positionY][positionX] = 0;
             }
         }
         
