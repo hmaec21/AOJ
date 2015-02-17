@@ -39,10 +39,6 @@ int vote(Node node) {
 }
 
 Node parse(string s) {
-    /*
-    木を作って再帰
-    プロジェクトでやった、XMLパーサと似ているかもしれない
-    */
     Node root;
     stack<Node> tmp;
     int num = 0;
