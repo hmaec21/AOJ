@@ -15,9 +15,9 @@ int main() {
         int maxSum = -100000;
         int sum = 0;
         for (int i = 0; i < n; i++) {
-            int an;
-            scanf("%d", &an);
-            sum += an;
+            int ai;
+            scanf("%d", &ai);
+            sum += ai;
             maxSum = max(maxSum, sum);
             if (sum < 0) {
                 sum = 0;
